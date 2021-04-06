@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: '微軟正黑體',Arial,'標楷體';
+    margin: 0px; 
+    background-color:#eceae1; 
+}
+
+/*頁首頁尾開始*/
+/*header*/
+
+.header {
+    background-color:#ded2c2;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.web > a{
+    width: 12%;
+    height: 12%; 
+    padding: 0;
+}
+.web{
+    width: 25%;
+    margin-left: 3%;
+    margin-bottom: 0.5%;
+    display: flex;
+    justify-content: left;
+}
+.web img{
+    width: 1000%;
+    height: 1100%;
+   
+}
+
+.navbtn {
+    width: 70%;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbtn a{
+    font-size: 26px;
+    color:  #844200;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 14%; 
+    justify-content: center;
+}
+
+/*'當滑鼠移到連結時超連結的樣式*/
+.navbtn a:hover {
+    text-decoration: underline;
+}
+
+
+/*footer*/
+.footer{
+    background-color: #ded2c2;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content:space-between;
+}
+.navbtn2 {
+    width: 60%;
+    overflow: hidden;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+}
+.navbtn2 h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.navbtn2 a{
+    font-size: 20px;
+    color: #844200;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+    
+/*頁首頁尾結束*/
+
+.theme img{
+    width: 100%;
+}
+
+  /*slideshow*/
+  .mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;/*垂直至中*/
+    width: 70%;
+    height: 550px;
+    margin-left: 15%;
+    margin-top: 3%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+    .slide {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    }
+
+/*圖片左右兩邊圖標*/
+.pre, .next {
+    cursor: pointer;/*將鼠標移到圖片上可以看光標結果-手型。*/
+    position: absolute;
+    top: 53%;
+    width: auto;
+    padding: 1%;
+    margin-left: 16%;
+    color:#DDB7AB;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;/*是否可以選擇屬性指定的元素的文本*/
+    }
+
+    /*右邊按鈕-移到右邊*/
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;/*按鈕圖樣*/
+    margin-right: 16%;
+    }
+
+    /*hover:當滑鼠移至超連結時，不論是文字變色、位移、換背景*/
+    .pre:hover, .next:hover {
+    background-color:#999B84;
+    }
+.cirbtn{
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cir {
+cursor: pointer;/*指定指標的形狀:手型*/
+height: 15px;
+width: 15px;
+margin: 1%;
+background-color: #DDB7AB;
+list-style-type: circle;
+border-radius: 50%;
+transition: background-color 0.6s ease; /*總時長0.6秒，ease速度曲線，轉變過程中由慢到快，再到慢结束。*/
+}
+
+/*'當滑鼠移到連結時超連結的樣式*/
+.active, .cir:hover {
+background-color:#999B84;
+}
+
+/*版權*/
+.co{
+    text-align: center;
+    background-color: #ded2c2;
+    padding-bottom: 2%;
+}
